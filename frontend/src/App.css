@@ -56,3 +56,121 @@ button {
   color: white;
   background: #444;
 }
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  background-color: hsl(229, 47%, 52%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-sizing: border-box;
+  transition: width 0.25s ease, min-width 0.25s ease;
+  }
+  
+  .sidebar.closed {
+  width: 70px;
+  min-width: 70px;
+  padding: 16px 10px;
+  }
+  
+  .sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  }
+  
+  .sidebar-header h2 {
+  font-size: 20px;
+  margin: 0;
+  }
+  
+  .sidebar-toggle {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  }
+  
+  .new-chat-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 24px;
+  }
+  
+  .new-chat-btn:hover,
+  .chat-item:hover {
+  background-color: #2a2a2a;
+  }
+  
+  .chat-history {
+  flex: 1;
+  overflow-y: auto;
+  }
+  
+  .chat-history h4 {
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 12px;
+  }
+  
+  .chat-item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  }
+  
+  .chat-title {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 8px;
+  background: transparent;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+  
+  .delete-chat-btn {
+  background: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  }
+  
+  .delete-chat-btn:hover {
+  color: #ff6b6b;
+  }
+  
+  .sidebar-footer {
+  border-top: 1px solid #333;
+  padding-top: 12px;
+  }
+  
+  .sidebar-footer p {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  }
+  
+  .sidebar-footer p:hover {
+  background: hsl(210, 4%, 29%);
+  }
+  
