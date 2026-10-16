@@ -58,19 +58,7 @@ button {
 }
 
 /* Sidebar */
-.sidebar {
-  width: 260px;
-  min-width: 260px;
-  height: 100vh;
-  background-color: hsl(229, 47%, 52%);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  box-sizing: border-box;
-  transition: width 0.25s ease, min-width 0.25s ease;
-  }
-  
+
   .sidebar.closed {
   width: 70px;
   min-width: 70px;
