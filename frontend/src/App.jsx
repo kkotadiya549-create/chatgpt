@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -23,14 +24,8 @@ function App() {
 
   return (
     <div className="app">
-      {/* Sidebar */}
-      <aside className="sidebar">
-        <h2>ChatGPT Clone</h2>
-
-        <button className="new-chat" onClick={handleNewChat}>
-          + New Chat
-        </button>
-      </aside>
+      {/* New Sidebar Component */}
+      <Sidebar />
 
       {/* Main Chat Area */}
       <main className="chat-area">
