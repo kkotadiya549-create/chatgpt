@@ -68,6 +68,8 @@ return (
       <div className="sidebar-footer">
         <p>👤 My Profile</p>
         <p>⚙️ Settings</p>
+      
+        
       </div>
     </>
   )}

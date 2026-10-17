@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
+import MessageList from "./components/MessageList";
 
 function App() {
   const [message, setMessage] = useState("");
